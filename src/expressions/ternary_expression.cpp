@@ -4,6 +4,6 @@ TernaryExpression::TernaryExpression(Expression &condition, Expression &truthy, 
 {
 }
 
-Literal &TernaryExpression::evaluate(Scope &evalScope) override
+Literal &TernaryExpression::evaluate(Scope &evalScope) 
 {
 }

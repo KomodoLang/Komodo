@@ -1,33 +1,26 @@
 #include <string>
 #include <unordered_map>
 #include "../expressions/literals/literal.h"
+#include "scope.h"
 
-class Scope
+Scope::Scope()
 {
-private:
-    std::unordered_map<std::string, Literal> *contents;
+    contents = new std::unordered_map<std::string, Literal &>();
+}
 
-public:
-    Scope()
-    {
-        contents = new std::unordered_map<std::string, Literal>();
-    }
+Scope::~Scope()
+{
+    delete contents;
+}
 
-    ~Scope()
-    {
-        delete contents;
-    }
+Literal &Scope::get(std::string identifier)
+{
+    return contents->find(identifier)->second;
+};
 
-    Literal &get(std::string identifier)
-    {
-        return contents->find(identifier)->second;
-    };
-
-    void set(std::string identifier, Literal& literal)
-    {
-        // if (!contents->contains(identifier))
-        // {
-        //     contents->insert({identifier, literal});
-        // }
-    };
+void Scope::set(std::string identifier, Literal &literal){
+    // if (!contents->contains(identifier))
+    // {
+    //     contents->insert({identifier, literal});
+    // }
 };

@@ -1,7 +1,10 @@
-#include "arithmetic_operator.h"
-#include "../../../expressions/literals/literal.h"
+#include "addition_operator.h"
+#include "../../../../expressions/literals/literal.h"
+#include "../../../../expressions/literals/int_literal.h"
+#include "../../../../expressions/literals/double_literal.h"
+#include "../../../../exceptions/incompatible_type_exception.h"
 
-Literal &AdditionOperator::evaluate(Scope &evalScope, Expression &operand1, Expression &operand2) override
+Literal &AdditionOperator::evaluate(Scope &evalScope, Expression &operand1, Expression &operand2)
 {
     Literal &op1 = operand1.evaluate(evalScope);
     Literal &op2 = operand2.evaluate(evalScope);
@@ -43,6 +46,6 @@ Literal &AdditionOperator::evaluate(Scope &evalScope, Expression &operand1, Expr
     }
     else
     {
-        throw incompatible_type_exception("addition", op1, op2);
+        throw incompatible_type_exception("addition", op1.getType(), op2.getType());
     }
 }

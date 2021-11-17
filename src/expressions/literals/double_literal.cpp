@@ -1,3 +1,4 @@
+#include "double_literal.h"
 #include "literal.h"
 
 DoubleLiteral::DoubleLiteral(double val) : value(val) {}

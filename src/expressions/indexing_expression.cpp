@@ -4,6 +4,6 @@ IndexingExpression::IndexingExpression(Expression &obj, Expression &index)
 {
 }
 
-Literal &IndexingExpression::evaluate(Scope &evalScope) override
+Literal &IndexingExpression::evaluate(Scope &evalScope) 
 {
 }

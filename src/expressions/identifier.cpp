@@ -1,6 +1,6 @@
 #include "identifier.h"
 
-Literal &Identifier::evaluate(Scope &evalScope) override
+Literal &Identifier::evaluate(Scope &evalScope) 
 {
     return evalScope.get(name);
 }
