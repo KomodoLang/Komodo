@@ -1,0 +1,173 @@
+// Imports
+// import argv, argc from sys
+// import sys
+// import std.gec
+// import "../otherFile.gec";
+
+
+// Globals
+const GRAVITY = 9.81
+
+
+// Functions
+function funcName() : int {
+    this.someVar = 10 // The Global Object
+}
+
+function funcName2(string input) : float {
+
+}
+
+function funcName3(int* pointer) : int {
+
+}
+
+function funcName4(char character) { // implicit char type
+    return char + 1
+}
+
+// Variables
+let myVar = 10
+char myVar2 = 'a'
+
+
+// Structs (Data container)
+struct Vec2 {
+    int x, y
+}
+
+Vec2 vec = {
+    x: 1,
+    y: 20
+}
+
+Vec2 vec = new {
+    x: 1,
+    y: 20
+}
+
+Vec2 vec = {1, 20} // Stack
+Vec2 vec = new {1, 20}
+
+Vec2 vec = new Vec2(1, 20) // Heap
+Vec2 vec = Vec2(1, 20) // Stack
+
+// Enums
+enum Method {
+    "GET",
+    "POST",
+    "DELETE",
+    "PUT",
+    "PATCH"
+}
+
+Method.GET.toInt() // 0
+Method.POST.toInt() // 1 ...
+
+// Type Defs
+typedef Headers {
+    [string]: string
+}
+
+// Classes
+class Animal {
+    string name // vars private by default
+    
+    Animal() {
+
+    }
+
+    pub getName() {
+        return this.name // refers to the animal instance
+    }
+}
+
+class HTTP {
+    string baseUrl
+
+    HTTP(string $baseUrl) // $ Auto Assign to instance variable
+
+    static string resolveHostName(string name) { // static method
+        await std.http.resolveHost(name) // Async Function
+    }
+
+    pub performRequest(string url, {
+        Method method,
+        Headers headers,
+        // etc...
+    }) {
+        std.http.request(baseurl + url, method, headers)
+    }
+}
+
+class List<T> {
+    struct Node<T> {
+        T data,
+        Node<T>* next
+    }
+}
+
+
+// Literals
+"string literal\n"
+124                 // int literal
+120.3               // double literal
+100_000_000         // int with spaces
+100000000000000000L // long literal
+
+0xff // hex int literal
+0xFF // hex int literal
+
+0xff.1a // hex double literal
+0xFF.3D // hex double literal
+
+0xffL // hex long literal
+0xFFL // hex long literal
+
+0b00100101           // binary int literal
+0b0010010101000100L  // binary long literal
+0b00100101.010001    // binary double literal
+
+0o0124343        // octal int literal
+0o0124343L       // octal long literal
+0o0124343.01376  // octal double literal
+
+0u111111111111111111111           // Unary int literal
+0u111111111111111111111L          // Unary long literal
+0u111111111111111111111.11111111  // Unary double literal
+
+// Math
+1 + 2  // Addition
+1 - 3  // Subtraction
+1 / 2  // Integer division between ints/longs (produces an int result)
+1 /~ 2 // Floating division between 'int's (produces a 'double' result). Will not be valid for 'double' operands
+1 % 2  // Modulus 
+
+// Bitwise (for number types)
+1 >> 2 // Right Shift
+1 << 2 // Left Shift
+1 | 2  // OR
+1 & 2  // AND
+~1     // NOT/Invert
+1 ^ 2  // XOR
+
+// Conditionl Operators // for booleans
+
+|| // OR 
+&& // AND
+?? // Nullish Coalescing
+==
+===
+!  // Not
+<
+>
+<=
+>=
+
+// STD LIB (Maybe)
+int toInt(double | long | char | bool)
+string toString(int | long | char | bool | double)
+double toDouble(int | char | bool)
+
+int parseInt(string)
+double parseDouble(string)

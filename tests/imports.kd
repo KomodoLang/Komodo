@@ -1,0 +1,6 @@
+import a, b, c, d, e, f, g, k, p from std; // this is a comment
+import std;
+
+func name() {
+    
+}

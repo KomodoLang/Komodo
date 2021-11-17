@@ -1,0 +1,14 @@
+import std
+import argv, argc from args
+
+//const MY_VAR = 69;
+
+func main() {
+    // Statements
+}
+
+func otherFunction(int poggers) {
+    print("your mom");
+}
+
+*eof*

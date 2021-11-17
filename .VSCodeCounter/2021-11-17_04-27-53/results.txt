@@ -1,0 +1,90 @@
+Date : 2021-11-17 04:27:53
+Directory : c:\Users\adyow\Downloads\GeckoLang
+Total : 50 files,  923 codes, 51 comments, 190 blanks, all 1164 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         47 |        898 |         51 |        183 |      1,132 |
+| Markdown |          2 |         24 |          0 |          7 |         31 |
+| Batch    |          1 |          1 |          0 |          0 |          1 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         50 |        923 |         51 |        190 |      1,164 |
+| src                                                                                          |         47 |        898 |         51 |        183 |      1,132 |
+| src\exceptions                                                                               |          2 |         15 |          0 |          5 |         20 |
+| src\expressions                                                                              |         22 |        155 |          0 |         60 |        215 |
+| src\expressions\literals                                                                     |          6 |         56 |          0 |         20 |         76 |
+| src\lexing                                                                                   |          6 |        301 |         16 |         39 |        356 |
+| src\operators                                                                                |         13 |         78 |          0 |         20 |         98 |
+| src\operators\binary                                                                         |          8 |         64 |          0 |         15 |         79 |
+| src\operators\binary\arithmetic                                                              |          4 |         50 |          0 |         10 |         60 |
+| src\operators\binary\arithmetic\ops                                                          |          2 |         45 |          0 |          8 |         53 |
+| src\operators\binary\bitwise                                                                 |          1 |          4 |          0 |          1 |          5 |
+| src\operators\binary\conditional                                                             |          1 |          4 |          0 |          1 |          5 |
+| src\operators\unary                                                                          |          3 |         12 |          0 |          3 |         15 |
+| src\scope                                                                                    |          2 |         40 |          0 |          9 |         49 |
+| src\util                                                                                     |          1 |          9 |          1 |          1 |         11 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                     | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\adyow\Downloads\GeckoLang\build.bat                                                 | Batch    |          1 |          0 |          0 |          1 |
+| c:\Users\adyow\Downloads\GeckoLang\readme.md                                                 | Markdown |         15 |          0 |          5 |         20 |
+| c:\Users\adyow\Downloads\GeckoLang\src\exceptions\incompatible_type_exception.cpp            | C++      |          3 |          0 |          2 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\exceptions\incompatible_type_exception.h              | C++      |         12 |          0 |          3 |         15 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\binary_expression.cpp                     | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\binary_expression.h                       | C++      |          6 |          0 |          3 |          9 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\expression.cpp                            | C++      |          0 |          0 |          1 |          1 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\expression.h                              | C++      |          7 |          0 |          1 |          8 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\function_call.cpp                         | C++      |          7 |          0 |          4 |         11 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\function_call.h                           | C++      |          7 |          0 |          2 |          9 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\identifier.cpp                            | C++      |          5 |          0 |          1 |          6 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\identifier.h                              | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\indexing_expression.cpp                   | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\indexing_expression.h                     | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\double_literal.cpp               | C++      |         10 |          0 |          4 |         14 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\double_literal.h                 | C++      |          9 |          0 |          4 |         13 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\int_literal.cpp                  | C++      |         10 |          0 |          4 |         14 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\int_literal.h                    | C++      |          9 |          0 |          4 |         13 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\literal.cpp                      | C++      |          1 |          0 |          1 |          2 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\literals\literal.h                        | C++      |         17 |          0 |          3 |         20 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\ternary_expression.cpp                    | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\ternary_expression.h                      | C++      |          6 |          0 |          2 |          8 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\unary_left_expression.cpp                 | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\unary_left_expression.h                   | C++      |          6 |          0 |          2 |          8 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\unary_right_expression.cpp                | C++      |          7 |          0 |          3 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\expressions\unary_right_expression.h                  | C++      |          6 |          0 |          3 |          9 |
+| c:\Users\adyow\Downloads\GeckoLang\src\komodo.cpp                                            | C++      |        300 |         34 |         49 |        383 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\character_parser.cpp                           | C++      |         22 |          0 |          6 |         28 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\character_parser.h                             | C++      |          9 |          0 |          4 |         13 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\character_type.h                               | C++      |         10 |          0 |          0 |         10 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\token.cpp                                      | C++      |        178 |         15 |         20 |        213 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\token.h                                        | C++      |         15 |          0 |          4 |         19 |
+| c:\Users\adyow\Downloads\GeckoLang\src\lexing\token_type.h                                   | C++      |         67 |          1 |          5 |         73 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\arithmetic\arithmetic_operator.cpp   | C++      |          0 |          0 |          1 |          1 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\arithmetic\arithmetic_operator.h     | C++      |          5 |          0 |          1 |          6 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\arithmetic\ops\addition_operator.cpp | C++      |         41 |          0 |          7 |         48 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\arithmetic\ops\addition_operator.h   | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\binary_operator.cpp                  | C++      |          0 |          0 |          1 |          1 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\binary_operator.h                    | C++      |          6 |          0 |          2 |          8 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\bitwise\bitwise_operator.h           | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\binary\conditional\conditional_operator.h   | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\operator.cpp                                | C++      |          0 |          0 |          1 |          1 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\operator.h                                  | C++      |          2 |          0 |          1 |          3 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\unary\unary_left_operator.h                 | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\unary\unary_operator.h                      | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\operators\unary\unary_right_operator.h                | C++      |          4 |          0 |          1 |          5 |
+| c:\Users\adyow\Downloads\GeckoLang\src\scope\scope.cpp                                       | C++      |         28 |          0 |          5 |         33 |
+| c:\Users\adyow\Downloads\GeckoLang\src\scope\scope.h                                         | C++      |         12 |          0 |          4 |         16 |
+| c:\Users\adyow\Downloads\GeckoLang\src\util\ansi_codes.h                                     | C++      |          9 |          1 |          1 |         11 |
+| c:\Users\adyow\Downloads\GeckoLang\todo.md                                                   | Markdown |          9 |          0 |          2 |         11 |
+| Total                                                                                        |          |        923 |         51 |        190 |      1,164 |
++----------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
