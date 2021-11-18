@@ -4,6 +4,6 @@ UnaryLeftExpression::UnaryLeftExpression(UnaryLeftOperator op, Expression &opera
 {
 }
 
-Literal &UnaryLeftExpression::evaluate(Scope &evalScope) 
+std::shared_ptr<Literal>UnaryLeftExpression::Evaluate(Scope &evalScope) 
 {
 }

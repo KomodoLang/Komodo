@@ -7,5 +7,5 @@ class FunctionCall : public Expression
 {
     FunctionCall(Expression &functioName, std::vector<Expression> args);
 
-    Literal &evaluate(Scope &evalScope) override;
+    std::shared_ptr<Literal> Evaluate(Scope &evalScope) override;
 };

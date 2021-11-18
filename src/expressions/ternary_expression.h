@@ -5,5 +5,5 @@ class TernaryExpression : public Expression
 {
     TernaryExpression(Expression &condition, Expression &truthy, Expression &falsy);
 
-    Literal &evaluate(Scope &evalScope) override;
+    std::shared_ptr<Literal>Evaluate(Scope &evalScope) override;
 };

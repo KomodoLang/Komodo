@@ -4,6 +4,6 @@ TernaryExpression::TernaryExpression(Expression &condition, Expression &truthy, 
 {
 }
 
-Literal &TernaryExpression::evaluate(Scope &evalScope) 
+std::shared_ptr<Literal>TernaryExpression::Evaluate(Scope &evalScope) 
 {
 }

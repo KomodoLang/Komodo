@@ -6,5 +6,5 @@ class IndexingExpression : public Expression
 {
     IndexingExpression(Expression &obj, Expression &index);
 
-    Literal &evaluate(Scope &evalScope) override;
+    std::shared_ptr<Literal>Evaluate(Scope &evalScope) override;
 };

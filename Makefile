@@ -1,4 +1,4 @@
-LDFLAGS += -lstdc++
+LDFLAGS += -lstdc++ 
 TARGET_EXEC ?= kom
 
 BUILD_DIR ?= ./build

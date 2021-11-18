@@ -6,5 +6,5 @@ class Identifier : public Expression
 {
     std::string name;
 
-    Literal &evaluate(Scope &evalScope) override;
+    std::shared_ptr<Literal>Evaluate(Scope &evalScope) override;
 };

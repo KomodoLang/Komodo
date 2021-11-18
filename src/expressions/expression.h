@@ -2,9 +2,10 @@
 
 #include "literals/literal.h"
 #include "../scope/scope.h"
+#include <memory>
 
 class Expression
 {
 public:
-    virtual Literal &evaluate(Scope &evalScope) = 0;
+    virtual std::shared_ptr<Literal> Evaluate(Scope &evalScope) = 0;
 };

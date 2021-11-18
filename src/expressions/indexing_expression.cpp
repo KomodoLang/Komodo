@@ -4,6 +4,6 @@ IndexingExpression::IndexingExpression(Expression &obj, Expression &index)
 {
 }
 
-Literal &IndexingExpression::evaluate(Scope &evalScope) 
+std::shared_ptr<Literal>IndexingExpression::Evaluate(Scope &evalScope) 
 {
 }

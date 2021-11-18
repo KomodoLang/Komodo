@@ -2,17 +2,18 @@
 #include <string>
 #include <unordered_map>
 #include "../expressions/literals/literal.h"
+#include <memory>
 
 class Scope
 {
 private:
-    std::unordered_map<std::string, Literal&> *contents;
+    std::unordered_map<std::string, std::shared_ptr<Literal>> *contents;
 
 public:
     Scope();
     ~Scope();
 
-    Literal &get(std::string identifier);
+    std::shared_ptr<Literal>get(std::string identifier);
 
-    void set(std::string identifier, Literal& literal);
+    void set(std::string identifier, std::shared_ptr<Literal> literal);
 };

@@ -2,6 +2,11 @@
 #include <fstream>
 #include "lexing/character_parser.h"
 #include "lexing/character_type.h"
+#include "operators/binary/arithmetic/addition_operator.h"
+#include "expressions/binary_expression.h"
+#include "expressions/literals/int_literal.h"
+#include "expressions/literals/double_literal.h"
+#include "expressions/literal_expression.h"
 
 Program::Program(std::string file_path)
 {
@@ -10,7 +15,23 @@ Program::Program(std::string file_path)
 
 StatusCode Program::simulate()
 {
-    std::cout << entry_point_lines.size() << std::endl;
+    Scope evaluationScope;
+
+    LiteralExpression operand1(std::make_shared<IntegerLiteral>(4));
+    LiteralExpression operand2(std::make_shared<DoubleLiteral>(5));
+
+    AdditionOperator op;
+
+    std::cout << "Before Compare" << std::endl;
+
+    std::shared_ptr<Literal> sum = BinaryExpression(operand1, op, operand2).Evaluate(evaluationScope);
+
+    std::cout << "After Compare" << std::endl;
+
+    std::cout << sum->getType() << std::endl;
+
+    std::cout << "After Type" << std::endl;
+    exit(0);
 
     // Parse
     bool hasPassedIncludes = false;

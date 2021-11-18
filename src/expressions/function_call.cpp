@@ -5,6 +5,6 @@ FunctionCall::FunctionCall(Expression &functioName, std::vector<Expression> args
 {
 }
 
-Literal &FunctionCall::evaluate(Scope &evalScope)
+std::shared_ptr<Literal>FunctionCall::Evaluate(Scope &evalScope)
 {
 }

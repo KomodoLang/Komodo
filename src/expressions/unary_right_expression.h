@@ -6,5 +6,5 @@ class UnaryRightExpression : public Expression
 {
     UnaryRightExpression(Expression &operand, UnaryRightOperator op);
 
-    Literal &evaluate(Scope &evalScope) override;
+    std::shared_ptr<Literal>Evaluate(Scope &evalScope) override;
 };
