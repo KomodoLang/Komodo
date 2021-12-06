@@ -1,0 +1,29 @@
+{
+  "name": "komodolang",
+  "version": "1.0.0",
+  "description": "Komodo is an open source mutlipurpose language meant to fix some things that other popular languages didn't do very well. Features will be inspired by many languages including:",
+  "main": "komodo.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KomodoLang/Komodo.git"
+  },
+  "keywords": [
+    "komodo"
+  ],
+  "author": "Wowkster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KomodoLang/Komodo/issues"
+  },
+  "homepage": "https://github.com/KomodoLang/Komodo#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7"
+  }
+}
